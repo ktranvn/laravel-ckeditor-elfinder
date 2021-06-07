@@ -1,0 +1,37 @@
+{
+    "name": "ktran/ckeditor-elfinder",
+    "keywords": ["laravel", "ktran", "api"],
+    "description": "CKeditor with Elfinder for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin",
+            "email": "tranthai@enjoyworks.co.kr"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.5|^6|^7|^8",
+        "maatwebsite/excel": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ktran\\CE\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ktran\\CE\\CEServiceProvider"
+            ],
+            "aliases": {
+                "CE": "Ktran\\CE"
+            }
+        }
+    },
+
+    "minimum-stability": "dev"
+}
