@@ -57,7 +57,7 @@ class CEController extends Controller
             "dir" => "vendor/ktran/ckeditor-elfinder/elfinder",
             "locale" => false,
             "csrf" => true,
-            "s3url" => "https://".config('filesystems.disks.s3.bucket').'/s3-'.config('filesystems.disks.s3.region').'.amazonaws.com/'
+            "s3url" => "https://".config('filesystems.disks.s3.bucket').'.s3-'.config('filesystems.disks.s3.region').'.amazonaws.com/'
         ];
         return view('ce::filemanager.editor', $data);
     }
