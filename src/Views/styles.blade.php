@@ -1,0 +1,2 @@
+<link rel="stylesheet" href="/vendor/ktran/ckeditor-elfinder/colorbox/example1/colorbox.css">
+<link rel="stylesheet" href="/vendor/ktran/ckeditor-elfinder/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css">

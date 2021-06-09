@@ -1,13 +1,8 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link href="/plugins/colorbox/example1/colorbox.css" rel="stylesheet">
-<script type="text/javascript" src="/plugins/colorbox/jquery.colorbox-min.js"></script>
-<script type="text/javascript" src="/packages/barryvdh/elfinder/js/standalonepopup.js"></script>
-<script src="/plugins/RTE/ckeditor.js"></script>
-<script src="/plugins/RTE/samples/js/sample.js"></script>
-<link rel="stylesheet" href="/plugins/RTE/samples/toolbarconfigurator/lib/codemirror/neo.css">
+@include("ce::scripts")
+@include("ce::styles")
 
 
-<textarea class="form-control" id="content-content" name="content"></textarea>
+<textarea class="form-control" id="editor" name="content"></textarea>
 
 <script>
     if ( CKEDITOR.env.ie && CKEDITOR.env.version < 9 )
@@ -27,10 +22,10 @@
             var editorElement = CKEDITOR.document.getById( 'editor' );
 
             if ( wysiwygareaAvailable ) {
-                CKEDITOR.replace( 'content-content' );
+                CKEDITOR.replace( 'editor' );
             } else {
                 editorElement.setAttribute( 'contenteditable', 'true' );
-                CKEDITOR.inline( 'content-content' );
+                CKEDITOR.inline( 'editor' );
 
                 // TODO we can consider displaying some info box that
                 // without wysiwygarea the classic editor may not work.
