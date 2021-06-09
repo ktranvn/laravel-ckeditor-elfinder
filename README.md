@@ -23,7 +23,7 @@ composer require ktran/ckeditor-elfinder
 
 The defaults are set in `config/ckeditor_elfinder.php`. Publish the config to copy the file to your own config:
 ```sh
-php artisan vendor:publish --provider="Ktran\ckeditor-elfinder\CEServiceProvider"
+php artisan vendor:publish --provider="Ktran\CE\CEServiceProvider"
 ```
 
 ## Reference
