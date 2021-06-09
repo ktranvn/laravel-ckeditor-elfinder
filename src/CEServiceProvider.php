@@ -17,7 +17,7 @@ class CEServiceProvider extends ServiceProvider
             __DIR__.'/assets/' => public_path('vendor/ktran/ckeditor-elfinder'),
         ], 'public');
         $this->publishes([
-            __DIR__.'/Configs/ckeditor_elfinder.php' => config_path('ckeditor_elfinder.php'),
+            __DIR__.'/Configs/elfinder.php' => config_path('elfinder.php'),
         ]);
 
 
